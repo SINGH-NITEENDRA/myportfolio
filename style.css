@@ -1,0 +1,31 @@
+
+/* Custom animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #38b2ac; /* Tailwind Teal color */
+    box-shadow: 0 0 0 3px rgba(56, 178, 172, 0.5); /* Add focus shadow */
+}
+
+input, textarea {
+    transition: all 0.3s ease-in-out;
+}
